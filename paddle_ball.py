@@ -55,7 +55,7 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write("Player A: 0  Player B: 0", align="center", font=("Monospace", 20, "bold"))
+pen.write("Player 1: 0  Player 2: 0", align="center", font=("Monospace", 20, "bold"))
 
 
 def paddle_1_up():
@@ -114,7 +114,7 @@ while win:
     if ball.xcor() >= 380:
         player_1 += 1
         pen.clear()
-        pen.write("Player A: {}  Player B: {}".format(player_1, player_2), align="center",
+        pen.write("Player 1: {}  Player 2: {}".format(player_1, player_2), align="center",
                   font=("Monospace", 20, "bold"))
         ball.goto(0, 0)
         ball.px *= -1
@@ -122,7 +122,7 @@ while win:
     elif ball.xcor() <= -387:
         player_2 += 1
         pen.clear()
-        pen.write("Player A: {}  Player B: {}".format(player_1, player_2), align="center",
+        pen.write("Player 1: {}  Player 2: {}".format(player_1, player_2), align="center",
                   font=("Monospace", 20, "bold"))
         ball.goto(0, 0)
         ball.px *= -1
